@@ -6,25 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8936127E2F393FF50075D4AE /* AsyncDisplayKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8936127D2F393FF50075D4AE /* AsyncDisplayKit */; };
+		893612822F39405D0075D4AE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 893612812F39405D0075D4AE /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		8970610B2F38C1A300CD848E /* GiftedEmotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftedEmotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		898D327E2F39309E000C29D7 /* GiftedEmotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftedEmotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		897061202F38C1A500CD848E /* Exceptions for "GiftedEmotions" folder in "GiftedEmotions" target */ = {
+		898D32902F3930A0000C29D7 /* Exceptions for "GiftedEmotions" folder in "GiftedEmotions" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resource/Info.plist,
 			);
-			target = 8970610A2F38C1A300CD848E /* GiftedEmotions */;
+			target = 898D327D2F39309E000C29D7 /* GiftedEmotions */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8970610D2F38C1A300CD848E /* GiftedEmotions */ = {
+		898D32802F39309E000C29D7 /* GiftedEmotions */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				897061202F38C1A500CD848E /* Exceptions for "GiftedEmotions" folder in "GiftedEmotions" target */,
+				898D32902F3930A0000C29D7 /* Exceptions for "GiftedEmotions" folder in "GiftedEmotions" target */,
 			);
 			path = GiftedEmotions;
 			sourceTree = "<group>";
@@ -32,28 +37,38 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		897061082F38C1A300CD848E /* Frameworks */ = {
+		898D327B2F39309E000C29D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893612822F39405D0075D4AE /* Supabase in Frameworks */,
+				8936127E2F393FF50075D4AE /* AsyncDisplayKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		897061022F38C1A300CD848E = {
+		893612802F39405D0075D4AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8970610D2F38C1A300CD848E /* GiftedEmotions */,
-				8970610C2F38C1A300CD848E /* Products */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		898D32752F39309E000C29D7 = {
+			isa = PBXGroup;
+			children = (
+				898D32802F39309E000C29D7 /* GiftedEmotions */,
+				893612802F39405D0075D4AE /* Frameworks */,
+				898D327F2F39309E000C29D7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8970610C2F38C1A300CD848E /* Products */ = {
+		898D327F2F39309E000C29D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8970610B2F38C1A300CD848E /* GiftedEmotions.app */,
+				898D327E2F39309E000C29D7 /* GiftedEmotions.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +76,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8970610A2F38C1A300CD848E /* GiftedEmotions */ = {
+		898D327D2F39309E000C29D7 /* GiftedEmotions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897061212F38C1A500CD848E /* Build configuration list for PBXNativeTarget "GiftedEmotions" */;
+			buildConfigurationList = 898D32912F3930A0000C29D7 /* Build configuration list for PBXNativeTarget "GiftedEmotions" */;
 			buildPhases = (
-				897061072F38C1A300CD848E /* Sources */,
-				897061082F38C1A300CD848E /* Frameworks */,
-				897061092F38C1A300CD848E /* Resources */,
+				898D327A2F39309E000C29D7 /* Sources */,
+				898D327B2F39309E000C29D7 /* Frameworks */,
+				898D327C2F39309E000C29D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8970610D2F38C1A300CD848E /* GiftedEmotions */,
+				898D32802F39309E000C29D7 /* GiftedEmotions */,
 			);
 			name = GiftedEmotions;
 			packageProductDependencies = (
+				8936127D2F393FF50075D4AE /* AsyncDisplayKit */,
+				893612812F39405D0075D4AE /* Supabase */,
 			);
 			productName = GiftedEmotions;
-			productReference = 8970610B2F38C1A300CD848E /* GiftedEmotions.app */;
+			productReference = 898D327E2F39309E000C29D7 /* GiftedEmotions.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		897061032F38C1A300CD848E /* Project object */ = {
+		898D32762F39309E000C29D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					8970610A2F38C1A300CD848E = {
+					898D327D2F39309E000C29D7 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 897061062F38C1A300CD848E /* Build configuration list for PBXProject "GiftedEmotions" */;
+			buildConfigurationList = 898D32792F39309E000C29D7 /* Build configuration list for PBXProject "GiftedEmotions" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 897061022F38C1A300CD848E;
+			mainGroup = 898D32752F39309E000C29D7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8936127C2F393FF50075D4AE /* XCRemoteSwiftPackageReference "AsyncDisplayKit" */,
+				8936127F2F39404B0075D4AE /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8970610C2F38C1A300CD848E /* Products */;
+			productRefGroup = 898D327F2F39309E000C29D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8970610A2F38C1A300CD848E /* GiftedEmotions */,
+				898D327D2F39309E000C29D7 /* GiftedEmotions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		897061092F38C1A300CD848E /* Resources */ = {
+		898D327C2F39309E000C29D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +149,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		897061072F38C1A300CD848E /* Sources */ = {
+		898D327A2F39309E000C29D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +159,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		897061222F38C1A500CD848E /* Debug */ = {
+		898D32922F3930A0000C29D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -146,14 +167,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GiftedEmotions/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Gifted Emotions";
+				INFOPLIST_FILE = GiftedEmotions/Resource/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		897061232F38C1A500CD848E /* Release */ = {
+		898D32932F3930A0000C29D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -183,14 +203,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GiftedEmotions/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Gifted Emotions";
+				INFOPLIST_FILE = GiftedEmotions/Resource/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -212,7 +231,7 @@
 			};
 			name = Release;
 		};
-		897061242F38C1A500CD848E /* Debug */ = {
+		898D32942F3930A0000C29D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		897061252F38C1A500CD848E /* Release */ = {
+		898D32952F3930A0000C29D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -334,25 +353,57 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897061062F38C1A300CD848E /* Build configuration list for PBXProject "GiftedEmotions" */ = {
+		898D32792F39309E000C29D7 /* Build configuration list for PBXProject "GiftedEmotions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897061242F38C1A500CD848E /* Debug */,
-				897061252F38C1A500CD848E /* Release */,
+				898D32942F3930A0000C29D7 /* Debug */,
+				898D32952F3930A0000C29D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897061212F38C1A500CD848E /* Build configuration list for PBXNativeTarget "GiftedEmotions" */ = {
+		898D32912F3930A0000C29D7 /* Build configuration list for PBXNativeTarget "GiftedEmotions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897061222F38C1A500CD848E /* Debug */,
-				897061232F38C1A500CD848E /* Release */,
+				898D32922F3930A0000C29D7 /* Debug */,
+				898D32932F3930A0000C29D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8936127C2F393FF50075D4AE /* XCRemoteSwiftPackageReference "AsyncDisplayKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/resoul/AsyncDisplayKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+		8936127F2F39404B0075D4AE /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8936127D2F393FF50075D4AE /* AsyncDisplayKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8936127C2F393FF50075D4AE /* XCRemoteSwiftPackageReference "AsyncDisplayKit" */;
+			productName = AsyncDisplayKit;
+		};
+		893612812F39405D0075D4AE /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8936127F2F39404B0075D4AE /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 897061032F38C1A300CD848E /* Project object */;
+	rootObject = 898D32762F39309E000C29D7 /* Project object */;
 }
