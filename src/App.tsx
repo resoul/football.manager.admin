@@ -4,6 +4,7 @@ import { LoadingBarContainer } from 'react-top-loading-bar';
 import { BrowserRouter } from 'react-router-dom';
 import { ModuleProvider } from "./providers/module-provider";
 import { Toaster } from '@/components/ui/sonner';
+import { AdminAuthProvider } from '@/providers/admin-auth-provider';
 
 const { BASE_URL } = import.meta.env;
 
@@ -20,8 +21,10 @@ export default function App() {
             <HelmetProvider>
                 <LoadingBarContainer>
                     <BrowserRouter basename={BASE_URL}>
-                        <Toaster />
-                        <ModuleProvider />
+                        <AdminAuthProvider>
+                            <Toaster />
+                            <ModuleProvider />
+                        </AdminAuthProvider>
                     </BrowserRouter>
                 </LoadingBarContainer>
             </HelmetProvider>
