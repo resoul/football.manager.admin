@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ThemeProvider } from 'next-themes';
+import { HelmetProvider } from '@packages/react-helmet-async';
+import { LoadingBarContainer } from 'react-top-loading-bar';
+import { BrowserRouter } from 'react-router-dom';
+import { ModuleProvider } from "./providers/module-provider";
+import { Toaster } from '@/components/ui/sonner';
+import { AdminAuthProvider } from '@/providers/admin-auth-provider';
 
-function App() {
-  const [count, setCount] = useState(0)
+const { BASE_URL } = import.meta.env;
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+    return (
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            storageKey="vite-theme"
+            enableSystem
+            disableTransitionOnChange
+            enableColorScheme
+        >
+            <HelmetProvider>
+                <LoadingBarContainer>
+                    <BrowserRouter basename={BASE_URL}>
+                        <AdminAuthProvider>
+                            <Toaster />
+                            <ModuleProvider />
+                        </AdminAuthProvider>
+                    </BrowserRouter>
+                </LoadingBarContainer>
+            </HelmetProvider>
+        </ThemeProvider>
+    )
 }
-
-export default App
